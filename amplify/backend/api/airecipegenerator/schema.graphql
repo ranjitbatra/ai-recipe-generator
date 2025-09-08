@@ -1,0 +1,11 @@
+type Recipe {
+  title: String!
+  servings: Int
+  ingredients: [String!]!
+  steps: [String!]!
+}
+
+type Query {
+  generateRecipe(ingredients: [String!]!): Recipe
+    @function(name: "bedrockResolver-${env}")
+}

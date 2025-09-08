@@ -1,0 +1,7 @@
+{
+  "name": "bedrockResolver",
+  "version": "1.0.0",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.637.0"
+  }
+}

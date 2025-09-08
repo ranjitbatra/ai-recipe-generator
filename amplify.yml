@@ -1,0 +1,23 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - node -v
+        - npm -v
+        - export N_PREFIX="$HOME/.n"
+        - export PATH="$N_PREFIX/bin:$PATH"
+        - curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n | bash -s 20.19.0
+        - hash -r
+        - node -v
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

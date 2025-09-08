@@ -5,8 +5,10 @@ frontend:
       commands:
         - node -v
         - npm -v
+        # Install Node 20.19.0 without sudo
+        - export N_PREFIX="$HOME/.n"
+        - export PATH="$N_PREFIX/bin:$PATH"
         - curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n | bash -s 20.19.0
-        - export PATH="/usr/local/n/versions/node/20.19.0/bin:$PATH"
         - hash -r
         - node -v
         - npm ci

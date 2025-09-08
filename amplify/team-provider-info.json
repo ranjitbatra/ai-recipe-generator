@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-airecipegenerator-dev-78640-authRole",
+      "UnauthRoleArn": "arn:aws:iam::752501622987:role/amplify-airecipegenerator-dev-78640-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::752501622987:role/amplify-airecipegenerator-dev-78640-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-airecipegenerator-dev-78640-deployment",
+      "UnauthRoleName": "amplify-airecipegenerator-dev-78640-unauthRole",
+      "StackName": "amplify-airecipegenerator-dev-78640",
+      "StackId": "arn:aws:cloudformation:us-east-2:752501622987:stack/amplify-airecipegenerator-dev-78640/25ad3a50-8c74-11f0-8a3a-0608b601a33d",
+      "AmplifyAppId": "drsn3f85kqgzn"
+    },
+    "categories": {
+      "auth": {
+        "airecipegenerator4059b02e": {}
+      },
+      "function": {
+        "bedrockResolver": {
+          "deploymentBucketName": "amplify-airecipegenerator-dev-78640-deployment",
+          "s3Key": "amplify-builds/bedrockResolver-786b656b6f4d674e3159-build.zip"
+        }
+      },
+      "api": {
+        "airecipegenerator": {}
+      }
+    }
+  }
+}

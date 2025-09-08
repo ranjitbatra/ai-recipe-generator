@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "airecipegenerator",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authairecipegenerator4059b02e"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
+  }
+}
